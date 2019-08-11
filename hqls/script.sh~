@@ -1,0 +1,8 @@
+hive -f "airports_stg.hql"
+hive -f "airlines_stg.hql"
+hive -f "routes_stg.hql"
+hive -f "airports.hql"
+hive -f "airlines.hql"
+hive -f "routes.hql"
+
+

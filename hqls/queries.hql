@@ -1,0 +1,5 @@
+hive -e "select airport_name from airport where country in ('india','INDIA','India');"
+hive -e "select Airline from routes where Stops = 0;"
+hive -e "select Airline from routes where Codeshare = 'Y';"
+hive -e "select * from (select country, count(airport_id) cnt from airport group by country order by cnt desc) a limit 1 ;"
+hive -e "select airline_name from airlines where country = 'United States' and active = 'Y';"
